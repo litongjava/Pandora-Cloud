@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
 
 import logging
+import os
+import sys
 from datetime import datetime, timedelta
-from os import getenv
 from os.path import join, abspath, dirname
 
 import httpx
@@ -35,7 +36,12 @@ class ChatBot:
     def run(self, bind_str, threads=8, listen=True):
         host, port = self.__parse_bind(bind_str)
 
-        resource_path = abspath(join(dirname(__file__), 'flask'))
+        if getattr(sys, 'frozen', False):
+            base_path = os.path.dirname(sys.executable)
+        else:
+            base_path = abspath(join(dirname(__file__)))
+
+        resource_path = join(base_path, 'flask')
         app = Flask(__name__, static_url_path='',
                     static_folder=join(resource_path, 'static'),
                     template_folder=join(resource_path, 'templates'))
@@ -96,7 +102,7 @@ class ChatBot:
     @staticmethod
     def __get_api_prefix():
         default = 'https://ai-{}.fakeopen.com'.format((datetime.now() - timedelta(days=1)).strftime('%Y%m%d'))
-        return getenv('CHATGPT_API_PREFIX', default)
+        return os.getenv('CHATGPT_API_PREFIX', default)
 
     @staticmethod
     def __set_cookie(resp, token, expires):
