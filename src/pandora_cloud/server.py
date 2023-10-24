@@ -20,7 +20,7 @@ from . import __version__
 class ChatBot:
     __default_ip = '127.0.0.1'
     __default_port = 8018
-    __build_id = 'VkDNisWOezhjENf61sgQl'
+    __build_id = 'VkDNisWOezhjENf61sgQ1'
 
     def __init__(self, proxy, debug=False, sentry=False, login_local=False):
         self.proxy = proxy
@@ -530,6 +530,7 @@ class ChatBot:
                 'voice_available',
                 'i18n',
                 'model_switcher',
+                'arkose_prefetch_ec',
                 'persist_last_used_model',
                 'code_interpreter_available',
                 'breeze_available',
@@ -541,6 +542,7 @@ class ChatBot:
                 'layout_may_2023',
                 'shareable_links',
                 'allow_url_thread_creation',
+                'arkose_enabled',
                 'invite_referral',
                 'plugins_available',
                 'ks',

@@ -2,8 +2,8 @@ self.addEventListener('install', event => {
     event.waitUntil(
         caches.open('pandora-cloud-cache').then(function (cache) {
             return cache.addAll([
-                '/_next/static/VkDNisWOezhjENf61sgQl/buildManifest.js',
-                '/_next/static/VkDNisWOezhjENf61sgQl/ssgManifest.js',
+                '/_next/static/VkDNisWOezhjENf61sgQ1/buildManifest.js',
+                '/_next/static/VkDNisWOezhjENf61sgQ1/ssgManifest.js',
                 '/_next/static/chunks/1213-3a349d30aa6a72a3.js',
                 '/_next/static/chunks/1438-8d1de903270120c8.js',
                 '/_next/static/chunks/1564-77f6f9ff5dc52ea0.js',
@@ -17,7 +17,7 @@ self.addEventListener('install', event => {
                 '/_next/static/chunks/3267-ff92f42a054abd60.js',
                 '/_next/static/chunks/3389-482943a0011c8266.js',
                 '/_next/static/chunks/3a34cc27-fd0458d5c342aa61.js',
-                '/_next/static/chunks/4099-9cd8db1fba82daf6.js',
+                '/_next/static/chunks/4099-9cd8db1fba82daf7.js',
                 '/_next/static/chunks/4137-447db6c53ca8543c.js',
                 '/_next/static/chunks/4184.6c7782ced6bdbb7f.js',
                 '/_next/static/chunks/5427-fa01eda28dd41717.js',
@@ -47,7 +47,7 @@ self.addEventListener('install', event => {
                 '/_next/static/chunks/pages/admin/settings-bec522f40537bc92.js',
                 '/_next/static/chunks/pages/admin-62657cde350fa71e.js',
                 '/_next/static/chunks/pages/aip/pluginId/oauth/callback-d5082a83b78918bf.js',
-                '/_next/static/chunks/pages/app-1f71ef8cca5f3e9a.js',
+                '/_next/static/chunks/pages/app-1f71ef8cca5f3e0a.js',
                 '/_next/static/chunks/pages/auth/error-da90df12684f035a.js',
                 '/_next/static/chunks/pages/auth/ext_callback-88767d6f96e2da41.js',
                 '/_next/static/chunks/pages/auth/ext_callback_refresh-766ffa48c8abc1ce.js',
