@@ -28,7 +28,7 @@ jobs:
       - name: Upload package
         uses: actions/upload-artifact@v3
         with:
-          name: tauri-chatgpt-pandora-${{ runner.os }}-${{ runner.arch }}
+          name: chatgpt-pandora-${{ runner.os }}-${{ runner.arch }}
           path: dist
 
   # build_macos_m2:
@@ -78,7 +78,7 @@ jobs:
       - name: Upload package
         uses: actions/upload-artifact@v3
         with:
-          name: tauri-chatgpt-pandora-${{ runner.os }}-${{ runner.arch }}
+          name: chatgpt-pandora-${{ runner.os }}-${{ runner.arch }}
           path: dist
 
   build_windows:
