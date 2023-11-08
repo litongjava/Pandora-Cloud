@@ -103,5 +103,5 @@ jobs:
       - name: Upload package
         uses: actions/upload-artifact@v3
         with:
-          name: tauri-chatgpt-pandora-${{ runner.os }}-${{ runner.arch }}
+          name: chatgpt-pandora-${{ runner.os }}-${{ runner.arch }}
           path: dist          
